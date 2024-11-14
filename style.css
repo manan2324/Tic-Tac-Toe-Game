@@ -1,0 +1,105 @@
+body {
+    background-color: #27187E;
+    color: #F1F2F6;
+}
+
+h1 {
+    background-color: #758BFD;
+    text-align: center;
+    line-height: 2;
+    width: 25rem;
+    margin: 2rem auto;
+    border-radius: 0.75rem;
+    border: 2px solid #F1F2F6;
+}
+
+#winner {
+    text-align: center;
+    visibility: hidden;
+}
+
+.main-content {
+    margin-top: 4rem;
+}
+
+.play-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    width: 313px;
+    background-color: #F1F2F6;
+    padding: 0.35rem;
+    border-radius: 0.75rem;
+    margin: 3rem auto 2rem auto;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border-radius: 0.5rem;
+    background-color: #758BFD;
+    border: none;
+    cursor: pointer;
+    font-size: 3rem;
+    color: #F1F2F6;
+}
+
+.score-area {
+    width: 8%;
+    position: absolute;
+    top: 29%;
+    right: 6%;
+}
+
+.score-area h2 {
+    text-align: center;
+}
+
+.btn {
+    background-color: #ff8600;
+    color: #F1F2F6;
+    border: none;
+    border-radius: 5rem;
+    padding: 0.25rem 1rem;
+    height: 2.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (max-width: 550px) {
+    .play-area {
+        width: 244px;
+    }
+
+    .box {
+        height: 77px;
+        width: 77px;
+        font-size: 2rem;
+    }
+
+    .score-area {
+        top: 13%;
+        font-size: 0.75rem;
+        right: 11%;
+    }
+
+    h1 {
+        margin: 2rem auto 0rem;
+        width: 15rem;
+    }
+
+    .btn {
+        padding: 0.25rem 0.75rem;
+    }
+
+    .buttons {
+        gap: 0.75rem;
+    }
+}
